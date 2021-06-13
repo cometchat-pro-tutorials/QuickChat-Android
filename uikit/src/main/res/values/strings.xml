@@ -372,6 +372,10 @@
     <string name="err_invalid_user_name_message">Invalid name provided for the user. Please provide a valid name</string>
     <string name="err_invalid_group_name_message">Group name cannot be empty. Please provide a valid group name</string>
 
+    <string name="err_uid_guid_not_specified_message">UID or GUID not specified</string>
+    <string name="err_internet_unavailable">Internet unavailable. Please try again.</string>
+    <string name="err_request_in_progress_message">Request in progress...</string>
+
     <string name="downloading">Downloading</string>
     <string name="creating_group">Creating Group</string>
     <string name="reply_privately">Send Message Privately</string>
