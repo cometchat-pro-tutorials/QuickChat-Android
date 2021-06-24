@@ -6,6 +6,7 @@ import android.util.Log;
 import com.cometchat.pro.core.AppSettings;
 import com.cometchat.pro.core.CometChat;
 import com.cometchat.pro.exceptions.CometChatException;
+import com.cometchat.pro.uikit.ui_settings.UIKitSettings;
 
 public class QuickChatApp extends Application {
 
@@ -21,6 +22,8 @@ public class QuickChatApp extends Application {
             @Override
             public void onSuccess(String successMessage) {
                 Log.d(TAG, "Initialization completed successfully");
+                UIKitSettings.setAuthKey(AppConfig.AppDetails.AUTH_KEY);
+                CometChat.setSource("ui-kit","android","java");
             }
             @Override
             public void onError(CometChatException e) {
